@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WD101-PORTFOLIO</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root {
+  --accent: #2dae7f;
+  --accent-hover: #18907a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0b0f0e;
+  color: #e8fdf5;
+  padding: 30px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+.profile {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  transition: 0.3s;
+}
+
+.profile img:hover {
+  transform: scale(1.05);
+}
+
+.profile-info h1 {
+  color: var(--accent);
+}
+
+.profile-info p {
+  color: #bdfce3;
+  margin-top: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: linear-gradient(145deg, #0f1f1a, #0a1411);
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid rgba(0,255,150,0.2);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 0 20px rgba(4, 42, 26, 0.066);
+}
+
+.card h2 {
+  color: var(--accent);
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.card h2:hover {
+  text-shadow: 0 0 10px var(--accent);
+}
+
+.card ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.card p {
+  line-height: 1.6;
+  color: #cffff0;
+}
+
+.full {
+  margin-top: 20px;
+}
+
+.list-item {
+  margin-bottom: 10px;
+  transition: 0.2s;
+}
+
+.list-item:hover {
+  color: var(--accent);
+  transform: translateX(5px);
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-box {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--accent);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.social-box i {
+  color: var(--accent);
+}
+
+.social-box:hover {
+  background: rgb(66, 93, 66);
+  color: #000;
+  transform: scale(1.05);
+}
+
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid rgba(0,255,150,0.3);
+  color: #7fffd4;
+}
+
+@media(max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width: 600px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<div class="profile">
+  <img src="Lopez.jpg" alt="profile">
+  <div class="profile-info">
+    <h1>Nico B. Lopez</h1>
+    <p>Pampanga, Philippines</p>
+    <p>Bachelor of Science in Information Technology</p>
+    <p>nicolopez09@gmail.com</p>
+  </div>
+</div>
+
+
+<div class="grid">
+
+  
+  <div>
+
+    <div class="card">
+      <h2>Education</h2>
+      <ul>
+        <li>College: Bachelor of Science in Information Technology (Pampanga State Agricultural University)</li>
+        <li>Senior Highschool: Information Communication Technology
+           (Children of Fatima School of Mabalacat Inc.)</li>
+        <li>Highschool: Dolores National High School</li>
+        <li>Elementary: San Roque Elementary School</li>
+      </ul>
+    </div>
+
+    <div class="card full">
+      <h2>WHAT I BELIEVE IN:</h2>
+      <ul>
+        <li>Technology should help people.</li>
+        <li>Learning should be continuous.</li>
+        <li>IT must be used responsibly</li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <div class="card">
+    <h2>About Me</h2>
+    <p>
+  I am a student learning web development and exploring how websites and web applications are created. This portfolio showcases my activities, projects, and the skills I have developed in Web Systems and Technologies.
+<br>
+<br>
+My goal is to become a skilled and confident web developer who can create responsive, user-friendly, and meaningful digital experiences. I aim to continuously improve my abilities, learn new technologies, and apply my knowledge to real-world projects that can help people and make a positive impact.
+
+
+    </p>
+  </div>
+
+</div>
+
+<div class="card full">
+  <h2>Midterms</h2>
+  <ul>
+    <p><b>Midterm Lab Task 1:</b> <a href ="task1.html" target="_black" style="text-decoration: none;">
+        Resume Writing
+      </a></p>
+    <p><b>Midterm Lab Task 2:</b> <a href ="task2.html" target="_black" style="text-decoration: none;">
+        Unordered and Ordered Lists
+      </a></p>
+    <p><b>Midterm Lab Task 3:</b> <a href ="task3.html" target="_black" style="text-decoration: none;">
+        Request for Proposal
+      </a></p>
+    <p><b>Midterm Lab Task 4:</b> <a href ="task4.html" target="_black" style="text-decoration: none;">
+        Image Map
+      </a></p>
+    <p><b>Midterm Lab Task 5:</b> <a href ="task5.html" target="_black" style="text-decoration: none;">
+        Resume (Internal CSS)
+      </a></p>
+    <p><b>Midterm Lab Task 6:</b> <a href ="task6.html" target="_black" style="text-decoration: none;">
+        Display Property
+      </a></p>
+    <p><b>Midterm Lab Task 7:</b> <a href ="task7.html" target="_black" style="text-decoration: none;">
+        Semantic CSS
+      </a></p>
+    <p><b>Midterm Lab Task 8:</b> <a href ="task8.html" target="_black" style="text-decoration: none;">
+        CSS Layout
+      </a></p>
+    
+  </ul>
+</div>
+
+<div class="card full">
+  <h2>Finals</h2>
+  <ul>
+     <p><b>Final Lab Task 1:</b> <a href ="task1.html" target="_black" style="text-decoration: none;">
+        CSS Position
+      </a></p>
+    <li class="list-item">Final Lab Task 2: Ongoing......</li>
+    <li class="list-item">Final Lab Task 3: Ongoing......</li>
+    <li class="list-item">Final Lab Task 4: Ongoing......</li>
+  </ul>
+</div>
+
+<div class="card full">
+  <h2>Connect</h2>
+  <p><strong>Email:</strong> nicolopez09@gmail.com</p>
+
+  <div class="socials">
+    <a href="#" class="social-box"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="social-box"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="social-box"><i class="fab fa-github"></i></a>
+  </div>
+</div>
+
+<div class="footer">
+  <p>© 2026. All rights reserved.</p>
+</div>
+
+</div>
+
+</body>
+</html>
