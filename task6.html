@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Midterm Lab Task 6</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 700px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        /* TEXT BOXES - BLOCK */
+        .block-input {
+            display: block;
+            width: 680px;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* PARAGRAPH + BUTTONS INLINE-BLOCK */
+        .survey-text {
+            display: inline-block;
+            width: 60%;
+            vertical-align: middle;
+        }
+
+        .survey-btn {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+
+        /* GOOGLE SECTION */
+        .google-section {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .google-logo {
+            width: 200px;
+            margin-bottom: 10px;
+        }
+
+        .search-box {
+            width: 70%;
+            padding: 8px;
+        }
+
+        /* CHALLENGE SECTION */
+        .challenge {
+            margin-top: 40px;
+        }
+
+        .form-box {
+            width: 300px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-bottom: 30px;
+        }
+
+        .form-box input {
+            display: block;
+            width: 280px;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 8px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .uber-box {
+            width: 280px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .uber-box h3 {
+            margin-top: 0;
+        }
+
+        .uber-btn {
+            display: inline-block;
+            width: 48%;
+            padding: 8px;
+            margin-top: 10px;
+        }
+
+        .request {
+            background-color: black;
+            color: white;
+            border: none;
+        }
+
+        .schedule {
+            background-color: lightgray;
+            border: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Lab Task 6: Using Display Property</h2>
+
+    
+    <h3>Block Level Example</h3>
+    <input type="text" class="block-input" placeholder="Name">
+    <input type="email" class="block-input" placeholder="Email">
+
+    
+    <h3>Inline-Block Example</h3>
+    <p class="survey-text">
+        Thanks for chatting with our customer support.
+        Would you like to take our quick survey?
+    </p>
+    <button class="survey-btn">Yes</button>
+    <button class="survey-btn">No</button>
+
+    
+    <div class="google-section">
+        <h3>Google Search Form</h3>
+        <img src=google.jpg alt="Google Logo" class="google-logo">
+        <br>
+        <input type="text" class="search-box" placeholder="Search Google or type a URL">
+    </div>
+
+    
+    <div class="challenge">
+        <h3>Challenge Exercises</h3>
+
+        
+        <div class="form-box">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="email" placeholder="Email">
+            <button class="btn-primary">Sign Up</button>
+        </div>
+
+        
+        <div class="uber-box">
+            <h3>Request a ride now</h3>
+            <input type="text" placeholder="Enter pickup location">
+            <input type="text" placeholder="Enter destination">
+            <button class="uber-btn request">Request Now</button>
+            <button class="uber-btn schedule">Schedule for Later</button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

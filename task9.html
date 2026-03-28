@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Final LAB-TASK 1 </title>
+  
+
+<style>
+
+    body {
+        height: 1000px;
+    }
+
+    .btn1 {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 30px;
+        height: 30px;
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .cart:hover {
+    border: 1px solid rgba(10, 10, 10, 0.5);
+    transition: 0.5s;
+    }
+
+    .btn1:active {
+        border: 1px solid rgb(86, 54, 184);
+        
+    }
+
+    .fixed {
+        width: 320px;
+        height: 180px;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        background-color: gray;
+    }
+
+    .clothing-line {
+        position: relative;
+        display: inline-block;
+    }
+
+    img {
+        position: absolute;
+        width: 400px;
+        height: 450px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.28);
+       
+    }
+
+    #sale {
+        position: relative;
+        background-color: black;
+        color: white;
+        width:130px;
+        height: auto;
+        left: 250px;
+        padding: 10px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.7em;
+    }
+
+    .opacity {
+        position: inherit;
+        width: 400px;
+        height: 200px;
+        top: 145px;
+        background-color: rgb(156, 154, 154);
+        opacity: 0.5;
+    }
+
+    .cart {
+        position: relative;
+        border: 1px solid rgb(0, 0, 0);
+        padding: 10px 25px;
+        background-color: white;
+        left: 30%;
+        top: 30px;
+        bottom: 40%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    .cart:hover {
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            transition: 0.5s;
+    }
+    .cart:active {
+        border: 1px solid rgb(0, 0, 0);
+    }
+
+</style>
+
+</head>
+<body>
+    
+    <div>
+        <button class="btn1">X</button>
+            <i class="ri-close-line"></i>
+        </button>
+    </div>
+    
+    <div class="fixed"></div>
+
+    <div class="clothing-line">
+        <img src="polo.jpg" alt=" picture">
+        <p id="sale">20% sale</p>
+
+        <div class="opacity"></div>
+        <button class="cart">Add to Cart</button>
+    </div>
+
+</body>
+</html>

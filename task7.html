@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm Lab Task 7</title>
+    <style>
+    
+    #navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightseagreen;
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar a {
+    display: block;
+    color: pink;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    background-color: beige;
+}
+
+#navbar2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+    
+        *
+        {
+            box-sizing: border-box;
+        }
+        body
+        {
+            margin: 0px;
+        }
+        
+        header
+        {
+            background-color: pink;
+            width: 100%;
+            height: 100px;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+    nav
+        {
+        background-color:blue;
+        width: 100%;
+        height: 50px;
+        }
+        main
+        {
+        background-color: pink;
+        height: auto;
+        
+        }
+        aside
+        {
+        background-color: aqua;
+        width: 32%;
+        margin: 5px;
+        float: left;
+        }
+        section
+        {
+        background-color: white;
+        float: left  ;
+        width: 32%;
+        margin: 5px;
+        }
+        article
+        {
+        background-color: antiquewhite;
+        float: left  ;
+        width: 32%;
+        margin: 5px;
+        }
+        footer
+        {
+        background-color: rgb(255, 255, 0);
+        height: 100px;
+        clear: both;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        }
+
+        p
+        {
+        text-align: justify;
+        margin: 20px;
+        }
+        h2
+        {
+            margin: 20px;
+        }
+        @media screen and (max-width:800px)
+        {
+        aside, section, article
+        {
+        width: 100%;
+        }
+        }
+    </style>
+</head>
+<body>
+<header><h1>HEADER</h1></header>
+ <h3>Horizontal Nav Bar</h3>
+  <nav id="navbar">
+  <nav>
+  <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  </ul>
+  </nav>
+ <main>
+    <aside>
+        <h2>aside</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ullam quod voluptas ducimus eum blanditiis illo distinctio dolore nisi excepturi, at expedita, sit facilis est aspernatur nam perferendis dolor repudiandae.
+    </p>
+    </aside>
+    <section>
+        <H2>section</H2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda earum natus corrupti, consequuntur reprehenderit ex quas facere nesciunt dolorum nam quo facilis ea unde dolore libero, voluptatum officia soluta! Id?</p>
+    </section>
+    <article>
+        <h2>article uno</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quam, pariatur voluptatem nam ipsum recusandae tenetur distinctio vero quisquam eveniet doloremque, repellat culpa similique ut quod voluptas dignissimos harum at?</p>
+    </article>
+ </main>
+    <footer>
+        <h2>footer</h2>
+    </footer>
+</body>
+</html>
