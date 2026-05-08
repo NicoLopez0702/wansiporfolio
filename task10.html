@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FINAL LAB-TASK 2</title>
+<style>
+
+body{font-family:Arial}
+*{box-sizing:border-box;margin:0;padding:0}
+
+.flexy-weird-box{display:flex}
+.redThingPaddingStuff{background:green;padding:5px 10px}
+.spacing-container-ish{padding:10px;margin-bottom:20px}
+
+.headerThingTopArea{width:100%;height:150px;background:beige;border:1px solid rgb(3, 173, 3)}
+.wrap-it-all-flexy{display:flex;gap:7px;flex-wrap:wrap}
+.greenMain-ishArea{border:1px solid rgb(0, 0, 0);background:#95e936;padding:7px 0}
+.footerBottomThing{background:beige;height:100px;border:1px solid red;width:100%}
+
+.flexy-weird-box div:first-child{background:rgb(0, 187, 250);width:200px}
+.flexy-weird-box div:last-child{width:75px;background:rgb(87, 0, 14)}
+
+.flexy-weird-box{display:flex}
+
+.mixRowSomethingHere{display:flex}
+.mixRowSomethingHere div:last-child{background:rgb(255, 0, 234);width:75px}
+.mixRowSomethingHere div:nth-child(2){background:rgb(43, 255, 0);flex:1}
+.mixRowSomethingHere div:first-child{width:50px;background:lightblue}
+
+.mixRowSomethingHere div{min-height:10px}
+
+.spaceBetweenMagicRow{display:flex;justify-content:space-between}
+.spaceBetweenMagicRow div{background:rgb(0, 209, 224)}
+
+.centerAlignFlexStuff{display:flex;align-items:center;height:50px;justify-content:space-between;border:2px solid gray}
+.centerAlignFlexStuff div{padding:5px 10px;background:rgb(255, 0, 234)}
+
+.leftSideBar-ishThing{height:250px;background:rgb(43,165,43);padding:7px;border:1px solid red;width:30%}
+.rightSideBar-ishThingy{height:250px;background:rgb(43,165,43);padding:7px;border:1px solid red;flex:1}
+
+.leftSideBar-ishThing{width:30%}
+.rightSideBar-ishThingy{flex:1}
+
+hr{visibility:hidden}
+
+@media (max-width:800px){
+.leftSideBar-ishThing,.rightSideBar-ishThingy{width:100%}
+}
+
+@media (max-width:800px){
+.leftSideBar-ishThing{width:100%}
+}
+
+@media (max-width:400px){
+.wrap-it-all-flexy{flex-direction:column}
+.leftSideBar-ishThing,.rightSideBar-ishThingy{height:100px}
+}
+
+@media (max-width:400px){
+.rightSideBar-ishThingy{height:100px}
+}
+
+</style>
+</head>
+<body>
+
+<h3>12a</h3>
+<div class="spacing-container-ish flexy-weird-box">
+<div>200px</div>
+<div>75px</div>
+</div>
+
+<h3>12b</h3>
+<div class="spacing-container-ish mixRowSomethingHere">
+<div>item1</div>
+<div>item2</div>
+<div>item3</div>
+</div>
+
+<h3>12c</h3>
+<div class="spacing-container-ish spaceBetweenMagicRow">
+<div>item1</div>
+<div>item2</div>
+<div>item3</div>
+<div>item4</div>
+</div>
+
+<h3>12d</h3>
+<div class="spacing-container-ish centerAlignFlexStuff">
+<div class="redThingPaddingStuff">item1</div>
+<div class="redThingPaddingStuff">item2</div>
+</div>
+
+<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+
+<div class="headerThingTopArea">This is a header</div>
+
+<div class="greenMain-ishArea">
+<div class="wrap-it-all-flexy">
+<div class="leftSideBar-ishThing">Section left-nav</div>
+<div class="rightSideBar-ishThingy">Section right-nav</div>
+</div>
+</div>
+
+<div class="footerBottomThing">This is a footer</div>
+
+</body>
+</html>
