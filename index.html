@@ -12,45 +12,47 @@
   --accent-hover: #18907a;
 }
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
 
-body {
+body{
   background: #0b0f0e;
   color: #e8fdf5;
   padding: 30px;
 }
 
-.container {
+.container{
   max-width: 1100px;
   margin: auto;
 }
 
-a {
+a{
   color: var(--accent);
   text-decoration: none;
 }
 
-a:visited {
+a:visited{
   color: var(--accent);
 }
 
-a:hover {
+a:hover{
   color: var(--accent-hover);
 }
 
-.profile {
+/* PROFILE */
+
+.profile{
   display: flex;
   gap: 20px;
   align-items: center;
   margin-bottom: 25px;
 }
 
-.profile img {
+.profile img{
   width: 120px;
   height: 120px;
   border-radius: 12px;
@@ -59,26 +61,30 @@ a:hover {
   transition: 0.3s;
 }
 
-.profile img:hover {
+.profile img:hover{
   transform: scale(1.05);
 }
 
-.profile-info h1 {
+.profile-info h1{
   color: var(--accent);
 }
 
-.profile-info p {
+.profile-info p{
   color: #bdfce3;
   margin-top: 5px;
 }
 
-.grid {
+/* GRID */
+
+.grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
-.card {
+/* CARD */
+
+.card{
   background: linear-gradient(145deg, #0f1f1a, #0a1411);
   border-radius: 16px;
   padding: 20px;
@@ -87,52 +93,70 @@ a:hover {
   transition: 0.3s ease;
 }
 
-.card:hover {
+.card:hover{
   transform: translateY(-5px) scale(1.01);
   box-shadow: 0 0 20px rgba(4, 42, 26, 0.066);
 }
 
-.card h2 {
+.card h2{
   color: var(--accent);
   margin-bottom: 10px;
-  transition: 0.3s;
 }
 
-.card h2:hover {
-  text-shadow: 0 0 10px var(--accent);
-}
-
-.card ul {
+.card ul{
   margin-left: 20px;
   margin-top: 10px;
 }
 
-.card p {
+.card p{
   line-height: 1.6;
   color: #cffff0;
 }
 
-.full {
+.full{
   margin-top: 20px;
 }
 
-.list-item {
-  margin-bottom: 10px;
-  transition: 0.2s;
+/* PROJECT BOXES */
+
+.project-container{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
-.list-item:hover {
-  color: var(--accent);
-  transform: translateX(5px);
+.project-item{
+  flex: 1;
+  min-width: 250px;
+  background: #0d2626;
+  border: 1px solid #04392c;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #06362a;
+  font-size: 24px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.socials {
+.project-item:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 0 12px #014937;
+  color: rgb(3, 104, 72);
+  background: #122828;
+}
+
+/* SOCIALS */
+
+.socials{
   display: flex;
   gap: 15px;
   margin-top: 10px;
 }
 
-.social-box {
+.social-box{
   flex: 1;
   text-align: center;
   padding: 10px;
@@ -142,17 +166,18 @@ a:hover {
   cursor: pointer;
 }
 
-.social-box i {
+.social-box i{
   color: var(--accent);
 }
 
-.social-box:hover {
+.social-box:hover{
   background: rgb(66, 93, 66);
-  color: #000;
   transform: scale(1.05);
 }
 
-.footer {
+/* FOOTER */
+
+.footer{
   margin-top: 40px;
   text-align: center;
   padding-top: 15px;
@@ -160,18 +185,21 @@ a:hover {
   color: #7fffd4;
 }
 
-@media(max-width: 900px) {
-  .grid {
+/* RESPONSIVE */
+
+@media(max-width: 900px){
+  .grid{
     grid-template-columns: 1fr;
   }
 }
 
-@media(max-width: 600px) {
-  .profile {
+@media(max-width: 600px){
+  .profile{
     flex-direction: column;
     text-align: center;
   }
 }
+
 </style>
 </head>
 
@@ -267,15 +295,33 @@ My goal is to become a skilled and confident web developer who can create respon
      <p><b>Final Lab Task 1:</b> <a href ="task9.html" target="_black" style="text-decoration: none;">
         CSS Position
       </a></p>
-    <p><b>Final Lab Task 2:</b> <a href ="task10.html" target="_black" style="text-decoration: none;">
+     <p><b>Final Lab Task 2:</b> <a href ="task10.html" target="_black" style="text-decoration: none;">
         USing CSS Flex Layout Manager
       </a></p>
     <p><b>Final Lab Task 3:</b> <a href ="task11.html" target="_black" style="text-decoration: none;">
         Integrating Bootstrap in your web design workflow
       </a></p>
-  
+    
   </ul>
 </div>
+
+ <div class="card full">
+
+    <h2>Finals Project</h2>
+
+    <div class="project-container">
+
+      <a href="https://leeshawn-gomez.github.io/TaRoute-PSAU/?fbclid=IwY2xjawRy165leHRuA2FlbQIxMQBicmlkETFJQnl0TnhkbjQ4bFFvak9Bc3J0YwZhcHBfaWQBMAABHnoDL04-05XUpofPGxMtCBFmVFREirsJIA1ge4wR8biQehZBZZjADafaKZ-n_aem_1m4EcCRLHulb1TBF-C1XsQ" class="project-item">
+        TaRoute PSAU
+      </a>
+
+      <a href="ws docu.mp4" class="project-item">
+        Documentation
+      </a>
+
+    </div>
+
+  </div>
 
 <div class="card full">
   <h2>Connect</h2>
